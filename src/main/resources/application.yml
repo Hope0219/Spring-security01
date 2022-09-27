@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Spring-security02
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/securitytest?useSSL=false&serverTimezone=UTC
+    username: root
+    password: mmmm1111
+  security:
+    user:
+      name: user
+      password: 111
+server:
+  port: 8089
+mybatis:
+  type-aliases-package: com.example.springsecurity01.mapper
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com:
+      example:
+        springsecurity02: debug
+
